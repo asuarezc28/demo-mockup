@@ -1,0 +1,35 @@
+<p-card header="" class="card-container">
+  <div class="content">
+    <ngx-charts-bar-vertical
+      [view]="view"
+      [scheme]="colorScheme"
+      [results]="barChartData"
+      [gradient]="gradient"
+      [xAxis]="showXAxis"
+      [yAxis]="showYAxis"
+      [legend]="showLegend"
+      [showXAxisLabel]="showXAxisLabel"
+      [showYAxisLabel]="showYAxisLabel"
+      [xAxisLabel]="xAxisLabel"
+      [yAxisLabel]="yAxisLabel"
+    >
+    </ngx-charts-bar-vertical>
+    <div class="card-data-container">
+      <app-card-data
+        style="width: 40%; margin-right: 10px"
+        [headerText]="'Texto de indicadores'"
+        [percentage]="'$6,59%'"
+        [description]="'Rendimiento del mes'"
+      >
+      </app-card-data>
+      <app-card-data
+        class="card-data-two"
+        style="width: 40%"
+        [headerText]="'Texto de indicadores'"
+        [percentage]="'$3,34%'"
+        [description]="'Rendimiento del mes'"
+      >
+      </app-card-data>
+    </div>
+  </div>
+</p-card>

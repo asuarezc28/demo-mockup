@@ -1,0 +1,22 @@
+.card-data-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+
+.card-data-two {
+  ::ng-deep .p-card {
+    background-color: #96E2BE;
+  }
+}

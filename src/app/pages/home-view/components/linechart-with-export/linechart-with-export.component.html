@@ -1,0 +1,41 @@
+<p-card>
+  <div class="card-header">
+    <div class="title-section">
+      <span class="title">Block of raw Inflation</span>
+      <button class="follow-button">+ Follow</button>
+    </div>
+  </div>
+  <div class="card-content">
+    <h1 class="m-0"><strong>$43.98</strong></h1>
+    <ngx-charts-line-chart
+      [view]="view"
+      [scheme]="colorScheme"
+      [results]="multi"
+      [gradient]="gradient"
+      [xAxis]="showXAxis"
+      [yAxis]="showYAxis"
+      [legend]="showLegend"
+      [showXAxisLabel]="showXAxisLabel"
+      [showYAxisLabel]="showYAxisLabel"
+      [xAxisLabel]="xAxisLabel"
+      [yAxisLabel]="yAxisLabel"
+      [autoScale]="true"
+    >
+    </ngx-charts-line-chart>
+  </div>
+  <div class="card-footer">
+    <div class="subtitle-section">
+      <span class="subtitle">Menu for Indicators</span>
+    </div>
+    <div class="icons-section">
+      <button
+        style="background-color: #7cb8ab; margin-right: 10px"
+        pButton
+        type="button"
+        icon="pi pi-cloud-download"
+        pTooltip="'Download'"
+        tooltipPosition="top"
+      ></button>
+    </div>
+  </div>
+</p-card>

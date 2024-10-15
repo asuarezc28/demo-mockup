@@ -1,0 +1,82 @@
+
+
+.card-header {
+  background-color: #e0f7e9; /* Color verde claro */
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.title-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.title {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.follow-button {
+  background-color: #ffffff; /* Botón blanco */
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+
+
+.card-footer {
+  background-color: #BDF2D0; /* Color verde más oscuro */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5rem;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.subtitle-section {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.icons-section {
+  display: flex;
+  gap: 10px;
+}
+
+.icon {
+  background-color: #ffffff; /* Fondo blanco para los íconos */
+  padding: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+
+::ng-deep .p-card .p-card-content {
+    padding: 0px !important;
+}
+
+
+::ng-deep .p-card .p-card-body {
+    padding: 0px !important;
+}
+
+
+.card-content {
+display: flex;
+flex-direction: column;
+align-items: center;
+background-color: #A3D5EB;
+}
+
+h1 {
+    margin: 0px;
+}

@@ -1,0 +1,32 @@
+<div class="main-container">
+  <div style="display: flex; flex-direction: row; gap: 10px">
+    <div style="display: flex; flex-direction: column">
+      <div style="display: flex; flex-direction: row; gap: 10px">
+        <div class="left-container">
+          <app-linechart-with-export />
+          <app-bar-chart />
+        </div>
+        <div class="right-container">
+          <app-card-data
+            [headerText]="'Texto de indicadores'"
+            [percentage]="'$5,29%'"
+            [description]="'Rendimiento del mes'"
+          >
+          </app-card-data>
+          <app-linechart-with-value />
+          <app-linechart-with-value />
+        </div>
+      </div>
+      <div
+        style="display: flex; flex-direction: row; gap: 10px; margin-top: 20px"
+      >
+        <div style="width: 30%">
+          <app-panel-menu />
+        </div>
+        <div style="width: 70%">
+          <app-table-data />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

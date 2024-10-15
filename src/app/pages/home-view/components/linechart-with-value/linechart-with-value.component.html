@@ -1,0 +1,23 @@
+<p-card>
+  <div class="card-content">
+    <div style="display: flex; flex-direction: column; justify-content: center">
+      <p>Indicator</p>
+      <h1 class="m-0"><strong>$43.98</strong></h1>
+    </div>
+    <ngx-charts-area-chart
+      [view]="view"
+      [scheme]="colorScheme"
+      [results]="multi"
+      [gradient]="gradient"
+      [xAxis]="showXAxis"
+      [yAxis]="showYAxis"
+      [legend]="showLegend"
+      [showXAxisLabel]="showXAxisLabel"
+      [showYAxisLabel]="showYAxisLabel"
+      [xAxisLabel]="xAxisLabel"
+      [yAxisLabel]="yAxisLabel"
+      [autoScale]="true"
+    >
+    </ngx-charts-area-chart>
+  </div>
+</p-card>
