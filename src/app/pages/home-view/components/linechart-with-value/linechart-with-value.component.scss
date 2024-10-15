@@ -80,3 +80,10 @@ background-color: #A3D5EB;
 h1 {
     margin: 0px;
 }
+
+
+ 
+
+:host ::ng-deep #unique-chart .ngx-charts text {
+  fill: white; // Cambia 'white' por el color que prefieras
+}

@@ -1,10 +1,11 @@
 <p-card>
-  <div class="card-content">
+  <div class="card-content" [style.background-color]="backgroundColor">
     <div style="display: flex; flex-direction: column; justify-content: center">
-      <p>Indicator</p>
-      <h1 class="m-0"><strong>$43.98</strong></h1>
+      <p [style.color]="colorNumbers">Indicator</p>
+      <h1 class="m-0" [style.color]="colorNumbers"><strong>$43.98</strong></h1>
     </div>
     <ngx-charts-area-chart
+      [id]="chartId"
       [view]="view"
       [scheme]="colorScheme"
       [results]="multi"

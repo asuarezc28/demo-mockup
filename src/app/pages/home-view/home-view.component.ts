@@ -7,7 +7,6 @@ import { LinechartWithValueComponent } from './components/linechart-with-value/l
 import { TableDataComponent } from './components/table-data/table-data.component';
 import { PanelMenuComponent } from './components/panel-menu/panel-menu.component';
 import { HeaderComponent } from './components/header/header.component';
-import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { MenuToSidebarComponent } from './components/menu-to-sidebar/menu-to-sidebar.component';
 
 @Component({

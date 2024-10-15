@@ -13,8 +13,17 @@
             [description]="'Rendimiento del mes'"
           >
           </app-card-data>
-          <app-linechart-with-value />
-          <app-linechart-with-value />
+          <app-linechart-with-value
+            [backgroundColor]="'#A3D5EB'"
+            [colorLine]="'#A1E6BD'"
+            [colorNumbers]="'black'"
+          />
+          <app-linechart-with-value
+            [chartId]="'unique-chart'"
+            [backgroundColor]="'black'"
+            [colorLine]="'#95C9E0'"
+            [colorNumbers]="'white'"
+          />
         </div>
       </div>
       <div

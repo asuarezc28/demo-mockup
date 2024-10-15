@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input, OnChanges, SimpleChanges } from '@angular/core';
 import { NgxChartsModule } from '@swimlane/ngx-charts';
 import { CardModule } from 'primeng/card';
 
@@ -9,13 +9,17 @@ import { CardModule } from 'primeng/card';
   templateUrl: './linechart-with-value.component.html',
   styleUrl: './linechart-with-value.component.scss',
 })
-export class LinechartWithValueComponent {
+export class LinechartWithValueComponent implements OnChanges {
   view: [number, number] = [300, 210];
+  @Input() backgroundColor: string = '#A3D5EB';
+  @Input() colorLine: string = '';
+  @Input() chartId: string = '';
+  @Input() colorNumbers: string = '';
   colorScheme: any = {
     name: 'customScheme',
     selectable: true,
     group: 'Ordinal',
-    domain: ['#A1E6BD'],
+    domain: [this.colorLine],
   };
   multi: any[] = [
     {
@@ -56,4 +60,11 @@ export class LinechartWithValueComponent {
   showYAxisLabel: boolean = true;
   xAxisLabel: string = '';
   yAxisLabel: string = '';
+  constructor() {
+    console.log(this.colorLine);
+  }
+  ngOnChanges(changes: SimpleChanges): void {
+    console.log(changes['colorLine'].currentValue);
+    this.colorScheme.domain = [changes['colorLine'].currentValue];
+  }
 }
